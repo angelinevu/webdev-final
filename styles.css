@@ -1,0 +1,32 @@
+h1,
+h2 {
+  text-align: center;
+  padding-top: 75px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form section {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+form {
+  width: 50%;
+  min-width: 350px;
+  max-width: 700px;
+}
+
+.bio::first-line {
+  font-weight: bold;
+}
+
+.card {
+  max-width: 250px;
+  margin: 10px;
+}
