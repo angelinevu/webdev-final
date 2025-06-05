@@ -59,7 +59,7 @@
         <img
           src="images/angeline.jpg"
           class="rounded-circle"
-          alt="picture of Angeline Vu in downtown Portland at night with a lit bridge in the background"
+          alt="Picture of Angeline Vu in downtown Portland at night with a lit bridge in the background."
           width="200"
           height="200"
         />
@@ -74,21 +74,63 @@
       </section>
       <section>
         <h2 id="previous-work">Previous Work</h2>
-        <!-- <embed
-          src="images/Vu_Angeline_Resume.pdf"
-          width="800px"
-          height="1080px"
-          type="application/pdf"
-          aria-label="Angeline Vu Resume PDF"
-        /> -->
-        <p></p>
+        <section class="cards d-flex flex-col">
+          <section class="work card shadow">
+            <div class="card-body">
+              <h3 class="card-title">Trimble Viewpoint</h3>
+              <h4 class="card-subtitle mb-2 text-muted">
+                Quality Assurance Intern
+              </h4>
+              <ul class="card-text ps-3">
+                <li>
+                  Collaborated with an engineering team in India to design,
+                  implement, and maintain 500+ automated end-to-end API tests
+                  using MSTest; independently developed and maintained 225+ unit
+                  tests with XUnit, NSubstitute, and Entity Framework in a
+                  .NET/C# codebase, improving code coverage and test
+                  reliability.
+                </li>
+                <li>
+                  Led a proof of concept for integrating Sauce Labs visual
+                  testing, working with a Distinguished Engineer to prototype
+                  remote browser tests that captured baseline screenshots and
+                  compared snapshots to identify visual regressions.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="work card shadow">
+            <div class="card-body">
+              <h3 class="card-title">Apex Fintech Solutions</h3>
+              <h4 class="card-subtitle mb-2 text-muted">
+                Software Engineer Intern
+              </h4>
+              <ul class="card-text ps-3">
+                <li>
+                  Collaborated on the Automated Customer Account Transfer
+                  Service team, designing and implementing a large-scale daily
+                  job in Golang to support 50+ account transfers with
+                  customizable options and asynchronous validation in Java.
+                </li>
+                <li>
+                  Performed manual testing using Kreya (gRPC) and Postman
+                  (HTTP), and integrated LaunchDarkly for dynamic feature flag
+                  management, enabling flexible deployments and customization.
+                </li>
+                <li>
+                  Increased unit test coverage by 40% and end-to-end test
+                  coverage by 25%; introduced service stubbing to improve
+                  testing efficiency and component isolation.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
       </section>
       <section>
         <h2 id="projects">Projects</h2>
-        <section
-          class="cards d-flex flex-row flex-wrap gap-3 justify-content-center"
-        >
-          <section class="card d-inline-block shadow">
+        <section class="cards d-flex flex-row flex-wrap gap-3">
+          <section class="project card d-inline-block shadow">
             <div class="card-body">
               <h3 class="card-title">Dying Blight</h3>
               <p class="card-text">
@@ -105,7 +147,7 @@
               </a>
             </div>
           </section>
-          <section class="card d-inline-block shadow">
+          <section class="project card d-inline-block shadow">
             <div class="card-body">
               <h3 class="card-title">WebChat</h3>
               <p class="card-text">
@@ -127,9 +169,7 @@
       </section>
       <section>
         <h2 id="contact">Contact</h2>
-        <form
-          class="border border-2 rounded rounded-3 bg-light mx-auto my-3 p-3"
-        >
+        <form class="border border-2 rounded rounded-3 w-50 bg-light my-3 p-3">
           <h3 class="text-center mb-2">Email Form</h3>
           <p class="text-center mb-2">Fill out the items in the form below</p>
           <label for="name" class="form-label">Name:</label>
@@ -155,7 +195,7 @@
             rows="4"
             placeholder="Enter your message here"
           ></textarea>
-          <section class="d-flex flex-fill gap-2">
+          <section class="d-flex flex-row align-items-start flex-fill gap-2">
             <button type="submit" class="btn btn-primary flex-fill">
               Submit
             </button>
