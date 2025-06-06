@@ -4,9 +4,9 @@ function sendEmail() {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    EMAILJS_SDK_KEY = "gRuiSgaLLhl-mMn1R";
-    EMAILJS_SERVICE_ID = "service_s6mgzd6";
-    EMAILJS_TEMPLATE_ID = "template_qveni25";
+    const EMAILJS_SDK_KEY = "gRuiSgaLLhl-mMn1R";
+    const EMAILJS_SERVICE_ID = "service_s6mgzd6";
+    const EMAILJS_TEMPLATE_ID = "template_qveni25";
 
     emailjs.init(EMAILJS_SDK_KEY);
     emailjs
