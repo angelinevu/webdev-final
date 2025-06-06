@@ -4,9 +4,13 @@ function sendEmail() {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    emailjs.init("gRuiSgaLLhl-mMn1R");
+    EMAILJS_SDK_KEY = "gRuiSgaLLhl-mMn1R";
+    EMAILJS_SERVICE_ID = "service_s6mgzd6";
+    EMAILJS_TEMPLATE_ID = "template_qveni25";
+
+    emailjs.init(EMAILJS_SDK_KEY);
     emailjs
-      .send("service_s6mgzd6", "template_qveni25", {
+      .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
         name: form.elements["name"].value,
         date: new Date().toLocaleString(),
         email: form.elements["email"].value,
